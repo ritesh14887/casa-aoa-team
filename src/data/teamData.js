@@ -20,7 +20,7 @@ export const teamMembers = [
     profession: 'IT Professional',
     introduction:
       'I am a resident of Casa Woodstock. I am an IT professional with over 14 years of industry experience.',
-    lives_since: '2021',
+    lives_since: '2022',
     vision:
       'My professional experience has reinforced my commitment to transparency, accountability, collaboration, and finding practical solutions. My primary goal is to ensure the successful registration of the Apartment Owners Association (AOA). My long-term commitment is to help build a healthy, secure, transparent, and accountable community that enhances the quality of life for every resident and makes Casa Woodstock an even better place to live.',
     contact: { email: null, flat: 'B-2003' },
@@ -56,7 +56,7 @@ export const teamMembers = [
     imageKey: 'IMAGE_5',
     name: 'Ritesh Kashyap',
     role: 'Joint Secretary',
-    profession: 'Engineering Manager',
+    profession: 'Engineering Manager Technology',
     introduction:
       'I have been a proud resident of Casa Woodstock for the past 6 years. Professionally, I have over 16 years of experience in the IT industry and currently work as an Engineering Manager, leading large-scale digital transformation and technology initiatives.',
     lives_since: '2020',
@@ -69,7 +69,7 @@ export const teamMembers = [
     imageKey: 'IMAGE_6',
     name: 'Aradhana Pal',
     role: 'Joint Treasurer',
-    profession: 'Project Manager at Infosys Ltd.',
+    profession: 'Project Manager',
     introduction:
       "I'm B.Tech in IT with 18 years of experience in IT industry. Currently a Project Manager at Infosys Ltd., managing a large team. I handle end-to-end delivery, client coordination, risk management, and SLA governance.",
     lives_since: '2018',
@@ -82,7 +82,7 @@ export const teamMembers = [
     imageKey: 'IMAGE_7',
     name: 'Anupam Shah',
     role: 'Executive Member',
-    profession: 'IT Infrastructure Leader at Network18 Media',
+    profession: 'IT Infrastructure Leader',
     introduction:
       'I bring over 20+ years of experience with Network18 Media, where I currently lead the IT infrastructure for 22 news channels.',
     lives_since: '2018',
@@ -94,9 +94,9 @@ export const teamMembers = [
     imageKey: 'IMAGE_8',
     name: 'Govind Dixit',
     role: 'Executive Member',
-    profession: 'IT Professional',
+    profession: 'Network Engineering Advisor',
     introduction:
-      'I have been working as an IT Professional having 14 years+ experience in the Industry. Throughout my career, I have valued transparency, accountability, collaboration, and a solution-oriented approach.',
+      'I have been working as a Network Engineering Advisor having 14 years+ experience in the Industry. Throughout my career, I have valued transparency, accountability, collaboration, and a solution-oriented approach.',
     lives_since: '2018',
     vision:
       'My immediate vision is to ensure the successful registration of the Apartment Owners Association (AOA). In the long term, I am committed to building a healthy, secure, transparent, and accountable ecosystem that enhances the quality of life for every resident and makes Casa Woodstock a better place to live.\n\nTogether, we can create a well-managed, safe, and vibrant community that every resident is proud to call home.',
@@ -107,9 +107,9 @@ export const teamMembers = [
     imageKey: 'IMAGE_9',
     name: 'Himanshu Singh',
     role: 'Executive Member',
-    profession: 'Senior IT Leader',
+    profession: 'Regional Manager Technology',
     introduction:
-      'A Senior IT Leader with 17 years of global experience in leading large teams, driving organizational transformation, and delivering measurable results.',
+      'Regional Manager Technology with 17 years of global experience in leading large teams, driving organizational transformation, and delivering measurable results.',
     lives_since: '2018',
     vision:
       'My professional journey has equipped me with the leadership, planning, and governance skills required to effectively serve our community. I believe in listening to residents, fostering teamwork, and delivering practical, sustainable solutions that benefit everyone.\n\nMy immediate priority is to successfully complete the registration of the Apartment Owners Association (AOA) and facilitate a smooth and transparent handover of the society management. Once these foundational objectives are achieved, my focus will be on strengthening governance, improving operational efficiency, enhancing transparency in financial and administrative matters, and creating a safe, well-maintained, and vibrant community for all residents.\n\nI am committed to working with every resident to build a society that is professionally managed, accountable, and continuously improving, while ensuring that every decision is taken in the best interest of the community.',
@@ -120,7 +120,7 @@ export const teamMembers = [
     imageKey: 'IMAGE_10',
     name: 'Shweta Ranjan',
     role: 'Executive Member',
-    profession: 'Co-Founder and COO at Tedrag Home Health Pvt. Ltd.',
+    profession: 'Co-Founder and COO at Tedrag Home Health Pvt. Ltd',
     introduction:
       'I have been living in Casa Woodstock for the past 7 years. I fulfil my responsibilities as a homemaker alongside being the Co-Founder and COO of Tedrag Home Health Pvt. Ltd.',
     lives_since: '2019',
