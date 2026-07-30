@@ -72,7 +72,7 @@ export const teamMembers = [
     profession: 'Project Manager at Infosys Ltd.',
     introduction:
       "I'm B.Tech in IT with 18 years of experience in IT industry. Currently a Project Manager at Infosys Ltd., managing a large team. I handle end-to-end delivery, client coordination, risk management, and SLA governance.",
-    lives_since: '2021',
+    lives_since: '2018',
     vision:
       'I am very excited about the AOA role because it closely aligns with my professional experience in operations, governance, coordination, and process-driven delivery.\n I believe I can contribute by: \n\n1. Bringing structured processes for society operations,  Maintenance and vendor management\n\n 2. Ensuring transparent communication and timely updates to all residents\n\n 3. Driving accountability for deliverables, budgets, audits and compliance\n\n 4. Working collaboratively with the others vendors, builder, Authorities and residents for the welfare of our society\n\nI am committed to serving the community with dedication and integrity, and I look forward to adding value to the AOA team and making our society stronger together.',
     contact: { email: null, flat: 'D-803' },
@@ -97,7 +97,7 @@ export const teamMembers = [
     profession: 'IT Professional',
     introduction:
       'I have been working as an IT Professional having 14 years+ experience in the Industry. Throughout my career, I have valued transparency, accountability, collaboration, and a solution-oriented approach.',
-    lives_since: '2019',
+    lives_since: '2018',
     vision:
       'My immediate vision is to ensure the successful registration of the Apartment Owners Association (AOA). In the long term, I am committed to building a healthy, secure, transparent, and accountable ecosystem that enhances the quality of life for every resident and makes Casa Woodstock a better place to live.\n\nTogether, we can create a well-managed, safe, and vibrant community that every resident is proud to call home.',
     contact: { email: null, flat: 'A-704' },
@@ -113,7 +113,7 @@ export const teamMembers = [
     lives_since: '2018',
     vision:
       'My professional journey has equipped me with the leadership, planning, and governance skills required to effectively serve our community. I believe in listening to residents, fostering teamwork, and delivering practical, sustainable solutions that benefit everyone.\n\nMy immediate priority is to successfully complete the registration of the Apartment Owners Association (AOA) and facilitate a smooth and transparent handover of the society management. Once these foundational objectives are achieved, my focus will be on strengthening governance, improving operational efficiency, enhancing transparency in financial and administrative matters, and creating a safe, well-maintained, and vibrant community for all residents.\n\nI am committed to working with every resident to build a society that is professionally managed, accountable, and continuously improving, while ensuring that every decision is taken in the best interest of the community.',
-    contact: { email: null, flat: 'D-1704' },
+    contact: { email: null, flat: 'D-801' },
   },
   {
     id: 10,
