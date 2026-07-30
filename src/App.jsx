@@ -66,7 +66,7 @@ export default function App() {
         <ContactCTA />
       </main>
 
-      <BottomNav />
+      {/* <BottomNav /> */}
 
       {selectedMember && (
         <MemberModal member={selectedMember} onClose={() => setSelectedMember(null)} />
