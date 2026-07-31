@@ -20,7 +20,7 @@ export default function MobileCard({ member, delay = 0, onSelect }) {
           </div>
           <div>
             <h3 className="font-headline-md text-on-surface text-lg">{member.name}</h3>
-            <p className="text-xs text-on-surface-variant font-medium tracking-wide mt-0.5">
+            <p className="text-md text-on-surface-variant font-medium tracking-wide mt-0.5">
               {member.profession}
             </p>
             <p className="font-label-sm text-label-sm text-on-surface-variant mt-1 text-[11px]">
@@ -28,7 +28,7 @@ export default function MobileCard({ member, delay = 0, onSelect }) {
             </p>
           </div>
         </div>
-        <span className="gold-glow-badge bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide shrink-0 ml-2">
+        <span className="gold-glow-badge bg-secondary/10 text-secondary px-3 py-1 rounded-full text-md font-bold uppercase tracking-wide shrink-0 ml-2">
           {member.role}
         </span>
       </div>
@@ -51,7 +51,7 @@ export default function MobileCard({ member, delay = 0, onSelect }) {
       {/* Footer */}
       <div className="mt-5 flex items-center justify-end">
         <button
-          className="flex items-center gap-2 text-accent-blue text-xs font-bold uppercase tracking-wide hover:opacity-80 transition-opacity"
+          className="flex items-center gap-2 text-accent-blue text-md font-bold uppercase tracking-wide hover:opacity-80 transition-opacity"
           onClick={(e) => { e.stopPropagation(); onSelect?.(member) }}
         >
           View Profile{' '}

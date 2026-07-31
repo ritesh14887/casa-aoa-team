@@ -17,7 +17,7 @@ export default function MemberCard({ member, delay = 0, onSelect }) {
       <div className="flex flex-row md:flex-col md:items-center px-4 pt-4 pb-3 md:px-8 md:pt-8 md:pb-4 gap-3 md:gap-0 relative z-10">
 
         {/* Avatar */}
-        <div className="w-[68px] h-[68px] md:w-28 md:h-28 shrink-0 md:mb-5
+        <div className="w-[78px] h-[78px] md:w-28 md:h-28 shrink-0 md:mb-5
                         rounded-xl md:rounded-full
                         border border-white/10 md:border-2
                         p-0 md:p-1 overflow-hidden">
@@ -37,14 +37,14 @@ export default function MemberCard({ member, delay = 0, onSelect }) {
           {/* Role badge */}
           <span className="inline-block px-2.5 py-0.5 md:px-3 md:py-1
                            bg-secondary text-on-secondary
-                           text-[10px] md:text-xs font-bold
+                           text-[12px] md:text-md font-bold
                            rounded-full uppercase tracking-wide
                            border border-secondary/20 mb-1 md:mb-2.5">
             {member.role}
           </span>
 
           {/* Name */}
-          <h3 className="font-semibold md:font-headline-md text-sm md:text-headline-md
+          <h3 className="font-semibold md:font-headline-md text-lg md:text-headline-md
                          text-on-surface leading-snug break-words">
             {member.name}
           </h3>
@@ -52,20 +52,20 @@ export default function MemberCard({ member, delay = 0, onSelect }) {
           {/* Profession + icon */}
           <div className="flex items-center md:justify-center gap-1 mt-1">
             <span className="material-symbols-outlined text-[13px] text-on-surface-variant/50 shrink-0">work</span>
-            <p className="text-xs text-on-surface-variant font-medium truncate md:whitespace-normal">
+            <p className="text-sm text-on-surface-variant font-medium truncate md:whitespace-normal">
               {member.profession}
             </p>
           </div>
 
           {/* Flat + Since chips */}
           <div className="flex flex-wrap md:justify-center items-center gap-x-3 gap-y-1 mt-2">
-            <span className="flex items-center gap-1 text-[11px] text-on-surface-variant">
-              <span className="material-symbols-outlined text-[13px] text-accent-blue/60">apartment</span>
+            <span className="flex items-center gap-1 text-[14px] text-on-surface-variant">
+              <span className="material-symbols-outlined text-[16px] text-accent-blue/60">apartment</span>
               {member.contact.flat}
             </span>
             {member.lives_since && (
-              <span className="flex items-center gap-1 text-[11px] text-on-surface-variant">
-                <span className="material-symbols-outlined text-[13px] text-accent-blue/60">calendar_today</span>
+              <span className="flex items-center gap-1 text-[14px] text-on-surface-variant">
+                <span className="material-symbols-outlined text-[16px] text-accent-blue/60">calendar_today</span>
                 Resident since {member.lives_since}
               </span>
             )}
@@ -92,15 +92,15 @@ export default function MemberCard({ member, delay = 0, onSelect }) {
             style={{ fontVariationSettings: "'FILL' 1" }}>
             lightbulb
           </span>
-          <span className="text-[10px] font-bold text-accent-blue/70 uppercase tracking-widest">Vision</span>
+          <span className="text-[14px] font-bold text-accent-blue uppercase tracking-widest">Vision</span>
         </div>
 
         {/* Quote text */}
         <div className="relative">
           {/* Decorative large quote mark — desktop */}
           <span className="hidden md:block absolute -top-1 -left-1 text-[40px] leading-none text-accent-blue/10
-                           font-serif select-none pointer-events-none">"</span>
-          <p className="text-xs md:text-sm text-on-surface-variant italic leading-relaxed
+                           select-none pointer-events-none">"</span>
+          <p className="text-md md:text-sm text-on-surface-variant italic leading-relaxed
                         line-clamp-3 whitespace-pre-line md:pl-3 md:text-center">
             {member.vision}
           </p>
@@ -112,7 +112,7 @@ export default function MemberCard({ member, delay = 0, onSelect }) {
 
       <div className="px-4 md:px-8 py-3 flex items-center justify-between md:justify-center relative z-10">
         <button
-          className="flex items-center gap-1.5 text-accent-blue text-[11px] md:text-xs font-bold uppercase tracking-wide
+          className="flex items-center gap-1.5 text-accent-blue text-[12px] md:text-md font-bold uppercase tracking-wide
                      hover:opacity-80 transition-opacity"
           onClick={(e) => { e.stopPropagation(); onSelect?.(member) }}
         >

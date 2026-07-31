@@ -36,7 +36,7 @@ export default function DesktopCard({ member, onSelect }) {
 
       {/* Role + name + profession */}
       <div className="mb-4 relative z-10">
-        <span className="inline-block px-3 py-1 bg-secondary text-on-secondary text-xs font-bold rounded-full uppercase tracking-wide mb-3 border border-secondary/20">
+        <span className="inline-block px-3 py-1 bg-secondary text-on-secondary text-md font-bold rounded-full uppercase tracking-wide mb-3 border border-secondary/20">
           {member.role}
         </span>
         <h3 className="font-headline-md text-headline-md text-on-surface mb-1">{member.name}</h3>
@@ -69,7 +69,7 @@ export default function DesktopCard({ member, onSelect }) {
       {/* Connect button */}
       <div className="mt-6 relative z-10 w-full">
         <button
-          className="flex items-center justify-center gap-2 w-full text-accent-blue text-xs font-bold uppercase tracking-wide hover:opacity-80 transition-opacity"
+          className="flex items-center justify-center gap-2 w-full text-accent-blue text-md font-bold uppercase tracking-wide hover:opacity-80 transition-opacity"
           onClick={(e) => { e.stopPropagation(); onSelect?.(member) }}
         >
           View Profile <span className="material-symbols-outlined text-[16px]">arrow_forward</span>

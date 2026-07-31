@@ -3,6 +3,7 @@ import Header from './components/Header'
 import BottomNav from './components/BottomNav'
 import MemberCard from './components/MemberCard'
 import MemberModal from './components/MemberModal'
+import VisitorCounter from './components/VisitorCounter'
 import { teamMembers } from './data/teamData'
 
 function ContactCTA() {
@@ -39,7 +40,7 @@ export default function App() {
 
         {/* Hero header — left on mobile, centred on desktop */}
         <div className="mb-10 md:mb-section-gap">
-          <h1 className="font-display-lg-mobile text-display-lg-mobile
+          <h1 className="font-display-md-mobile text-display-lg-mobile
                          md:font-display-lg md:text-display-lg
                          text-on-surface tracking-tight mb-2
                          md:text-center">

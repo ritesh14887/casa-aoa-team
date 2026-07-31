@@ -68,11 +68,11 @@ export default {
         'section-gap': '64px',
       },
       fontFamily: {
-        'headline-md': ['Manrope'],
-        'body-lg': ['Manrope'],
-        'body-md': ['Manrope'],
-        'display-lg-mobile': ['Manrope'],
-        'display-lg': ['Manrope'],
+        'headline-md': ['Montserrat'],
+        'body-lg': ['Montserrat'],
+        'body-md': ['Montserrat'],
+        'display-lg-mobile': ['Montserrat'],
+        'display-lg': ['Montserrat'],
         'label-sm': ['JetBrains Mono'],
       },
       fontSize: {

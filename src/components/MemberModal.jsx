@@ -45,7 +45,7 @@ export default function MemberModal({ member, onClose }) {
         {/* Hero header */}
         <div className="px-8 pt-6 pb-6 flex flex-col items-center text-center border-b border-white/10">
           {/* Avatar */}
-          <div className="w-24 h-24 rounded-full border-2 border-accent-blue/50 p-1 mb-4 shadow-[0_0_24px_rgba(59,140,248,0.2)]">
+          <div className="w-64 h-64 rounded-full border-2 border-accent-blue/50 p-1 mb-4 shadow-[0_0_24px_rgba(59,140,248,0.2)]">
             <div className="w-full h-full rounded-full overflow-hidden">
               <img
                 className="w-full h-full object-cover"
@@ -57,7 +57,7 @@ export default function MemberModal({ member, onClose }) {
           </div>
 
           {/* Role badge */}
-          <span className="inline-block px-3 py-1 bg-secondary text-on-secondary text-xs font-bold rounded-full uppercase tracking-wide mb-3 border border-secondary/20">
+          <span className="inline-block px-3 py-1 bg-secondary text-on-secondary text-md font-bold rounded-full uppercase tracking-wide mb-3 border border-secondary/20">
             {member.role}
           </span>
 
@@ -73,11 +73,11 @@ export default function MemberModal({ member, onClose }) {
 
           {/* Meta chips */}
           <div className="flex flex-wrap items-center justify-center gap-2">
-            <span className="text-xs text-on-surface-variant bg-white/5 border border-white/10 px-3 py-1 rounded-full">
+            <span className="text-md text-on-surface-variant bg-white/5 border border-white/10 px-3 py-1 rounded-full">
               Flat: {member.contact.flat}
             </span>
             {member.lives_since && (
-              <span className="text-xs text-on-surface-variant bg-white/5 border border-white/10 px-3 py-1 rounded-full flex items-center gap-1">
+              <span className="text-md text-on-surface-variant bg-white/5 border border-white/10 px-3 py-1 rounded-full flex items-center gap-1">
                 <span className="material-symbols-outlined text-[14px]">calendar_today</span>
                 Resident since {member.lives_since}
               </span>
@@ -85,7 +85,7 @@ export default function MemberModal({ member, onClose }) {
             {member.contact.email && (
               <a
                 href={`mailto:${member.contact.email}`}
-                className="text-xs text-accent-blue bg-accent-blue/10 border border-accent-blue/20 px-3 py-1 rounded-full hover:bg-accent-blue/20 transition-colors"
+                className="text-md text-accent-blue bg-accent-blue/10 border border-accent-blue/20 px-3 py-1 rounded-full hover:bg-accent-blue/20 transition-colors"
                 onClick={(e) => e.stopPropagation()}
               >
                 {member.contact.email}
@@ -98,7 +98,7 @@ export default function MemberModal({ member, onClose }) {
         <div className="px-8 pt-6 pb-2 space-y-6">
           {/* Introduction */}
           <section>
-            <h4 className="text-xs font-bold text-accent-blue uppercase tracking-widest mb-2">
+            <h4 className="text-md font-bold text-accent-blue uppercase tracking-widest mb-2">
               Introduction
             </h4>
             <p className="text-base text-on-surface leading-relaxed whitespace-pre-line">
@@ -111,7 +111,7 @@ export default function MemberModal({ member, onClose }) {
 
           {/* Vision */}
           <section>
-            <h4 className="text-xs font-bold text-accent-blue uppercase tracking-widest mb-2">
+            <h4 className="text-md font-bold text-accent-blue uppercase tracking-widest mb-2">
               Vision
             </h4>
             <p className="text-base text-on-surface-variant italic leading-relaxed whitespace-pre-line">
@@ -124,7 +124,7 @@ export default function MemberModal({ member, onClose }) {
         <div className="px-8 py-6">
           <button
             onClick={onClose}
-            className="w-full py-3 border border-accent-blue/30 text-accent-blue text-xs font-bold rounded-lg hover:bg-accent-blue/10 active:scale-[0.98] transition-all uppercase tracking-widest"
+            className="w-full py-3 border border-accent-blue/30 text-accent-blue text-md font-bold rounded-lg hover:bg-accent-blue/10 active:scale-[0.98] transition-all uppercase tracking-widest"
           >
             Close
           </button>
