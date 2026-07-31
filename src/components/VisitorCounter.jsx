@@ -1,32 +1,37 @@
 import { useEffect, useState } from 'react'
 
-const NAMESPACE = 'casa-woodstock'
-const KEY = 'homepage'
+const API = 'https://script.google.com/macros/s/AKfycbw9C5i5FF8pCPmKuRJdptRnPo7daCZqavsS2jT4wZG3Prj3oxhRn0N6m5HqJOToun-bMg/exec'
 
 export default function VisitorCounter() {
   const [count, setCount] = useState(null)
 
   useEffect(() => {
-    const updateCounter = async () => {
+    const page =
+      typeof window !== 'undefined' && window.location.pathname === '/'
+        ? 'homepage'
+        : typeof window !== 'undefined'
+          ? window.location.pathname.replace(/\//g, '_')
+          : 'homepage'
+
+    const key = `visited-${page}`
+
+    if (typeof window !== 'undefined' && sessionStorage.getItem(key)) {
+      return
+    }
+
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem(key, 'true')
+    }
+
+    async function updateCounter() {
       try {
-        if (typeof window === 'undefined') return
-
-        let data
-
-        if (!sessionStorage.getItem('visitor-counted')) {
-          sessionStorage.setItem('visitor-counted', 'true')
-
-          const response = await fetch(`https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fritesh14887%2F&countColor=%23263759`)
-          data = await response.json()
-        } else {
-          const response = await fetch(`https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fritesh14887%2F&countColor=%23263759`)
-          data = await response.json()
-        }
-
-        setCount(data?.value ?? 0)
-      } catch (error) {
-        console.error('Visitor counter error:', error)
-        setCount(0)
+        debugger
+        const res = await fetch(`${API}?page=${page}`)
+        const data = await res.json()
+        console.log(data.count)
+        setCount(data.count)
+      } catch (err) {
+        console.error(err)
       }
     }
 
@@ -34,10 +39,8 @@ export default function VisitorCounter() {
   }, [])
 
   return (
-    <div className="hidden inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-on-surface-variant backdrop-blur-sm">
-      <span className="h-2 w-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(0,230,57,0.5)]" />
-      <span>Visitors</span>
-      <span className="text-on-surface">{count ?? '...'}</span>
+    <div className="text-[11px] md:text-xs uppercase tracking-[0.2em] text-on-surface-variant/80">
+      {/* Visitors: {count ?? 'Loading...'} */}
     </div>
   )
 }

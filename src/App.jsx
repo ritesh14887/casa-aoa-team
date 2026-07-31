@@ -3,7 +3,6 @@ import Header from './components/Header'
 import BottomNav from './components/BottomNav'
 import MemberCard from './components/MemberCard'
 import MemberModal from './components/MemberModal'
-import VisitorCounter from './components/VisitorCounter'
 import { teamMembers } from './data/teamData'
 
 function ContactCTA() {
