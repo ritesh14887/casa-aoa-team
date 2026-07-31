@@ -4,7 +4,7 @@ export const teamMembers = [
     imageKey: 'IMAGE_1',
     name: 'Ravi Shankar Bhushan',
     role: 'President',
-    profession: 'Development Sector Professional',
+    profession: 'Development Professional',
     introduction:
       'I have been working in the development sector for the past 24 years, partnering with various government ministries to support the effective implementation of social development and financial security programs across the country. I am a proud alumnus of Jawaharlal Nehru University.',
     lives_since: '2022',
